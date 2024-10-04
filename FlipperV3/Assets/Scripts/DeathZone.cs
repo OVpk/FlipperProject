@@ -6,7 +6,7 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour
 {
     
-    Vector3 positionSpawn = new Vector3(4.524f, -1.31f, -0.25f);
+    Vector3 positionSpawn = new Vector3(4.524f, -1.31f, -0.256f);
 
     private Quaternion rotationSpawn = new Quaternion();
     // Start is called before the first frame update

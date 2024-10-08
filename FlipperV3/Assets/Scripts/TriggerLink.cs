@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class TriggerLink : MonoBehaviour
 {
-
-    public float score = 0f;
+    public int score = 0;
+    public Trigger trigger;
     
     // Start is called before the first frame update
     void Start()
@@ -22,9 +22,11 @@ public class TriggerLink : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (gameObject.tag == "DrumLogoTag")
+        if (gameObject.tag == "DrumLogoTag" && trigger.drumActive) 
         {
             score += 10;
+            trigger.drumActive = false;
+            Destroy(trigger.objetActuel);
         }
 
         

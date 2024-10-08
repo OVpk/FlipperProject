@@ -8,6 +8,8 @@ public class Stick : MonoBehaviour
     public Animation anim;
     public float strength = 1;
     private Vector3 force;
+
+    public string check;
     private void OnCollisionEnter(Collision collision)
     {
         if (key == KeyCode.Mouse0)
@@ -26,8 +28,14 @@ public class Stick : MonoBehaviour
         {
             if (Input.GetKey(key))
             {
-                anim.Play("StickLeft");
-                anim.Play("StickRight");
+                if (check == "Left")
+                {
+                    anim.Play("StickLeft");
+                }
+                else
+                {
+                    anim.Play("StickRight");
+                }
             }
     
         }

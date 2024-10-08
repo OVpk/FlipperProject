@@ -2009,14 +2009,14 @@ RectTransform:
   m_GameObject: {fileID: 385424634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24338, y: 0.93090415, z: 0.24338}
+  m_LocalScale: {x: 0.7286554, y: 2.787034, z: 0.7286554}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1331365106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159, y: -15}
+  m_AnchoredPosition: {x: -344, y: -45.108}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385424636
@@ -2115,6 +2115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumActive: 0
+  objetActuel: {fileID: 0}
 --- !u!50 &385424640
 Rigidbody2D:
   serializedVersion: 4
@@ -4897,6 +4898,7 @@ MonoBehaviour:
   key: 324
   anim: {fileID: 1303788576}
   strength: 2000
+  check: Right
 --- !u!135 &1303788578
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5008,7 +5010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -5142,8 +5144,8 @@ Transform:
   m_GameObject: {fileID: 1388370132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -105.58002, y: 9.938999, z: 0}
-  m_LocalScale: {x: 0.24338, y: 0.24338, z: 0.24338}
+  m_LocalPosition: {x: -184.0585, y: 475, z: 0}
+  m_LocalScale: {x: 0.7286554, y: 0.7286554, z: 0.7286554}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 899341712}
@@ -5161,7 +5163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da526aa0bac981488d0e06aaeee09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatTempo: 120
+  beatTempo: 50
   hasStarted: 0
 --- !u!1 &1396379169
 GameObject:
@@ -5818,6 +5820,7 @@ MonoBehaviour:
   key: 323
   anim: {fileID: 1582880615}
   strength: 2000
+  check: Left
 --- !u!135 &1582880618
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6894,8 +6897,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.1883938
-  m_Center: {x: 2.6750064, y: 5.4554815, z: -4.233325}
+  m_Radius: 1.1735902
+  m_Center: {x: 2.6687777, y: 5.0539927, z: -4.233325}
 --- !u!114 &2044539489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6908,7 +6911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43edfb674d9832f44a75a7c875c0742e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 2000
+  strength: 800
   anim: {fileID: 2044539490}
 --- !u!111 &2044539490
 Animation:
@@ -6939,6 +6942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  trigger: {fileID: 385424639}
 --- !u!1 &2082937669
 GameObject:
   m_ObjectHideFlags: 0

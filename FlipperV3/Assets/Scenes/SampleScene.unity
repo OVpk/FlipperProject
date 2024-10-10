@@ -2114,7 +2114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2edcef17265f0442b3d1ecee76ce27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumActive: 0
   objetActuel: {fileID: 0}
 --- !u!50 &385424640
 Rigidbody2D:
@@ -6911,7 +6910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43edfb674d9832f44a75a7c875c0742e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 800
+  strength: 500
   anim: {fileID: 2044539490}
 --- !u!111 &2044539490
 Animation:

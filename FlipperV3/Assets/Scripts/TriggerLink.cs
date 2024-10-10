@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TriggerLink : MonoBehaviour
 {
-    public int score = 0;
     public Trigger trigger;
     
     // Start is called before the first frame update
@@ -22,13 +22,16 @@ public class TriggerLink : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (gameObject.tag == "DrumLogoTag" && trigger.drumActive) 
+        for (int i = 0; i < trigger.dictInstrumentState.Count; i++)
         {
-            score += 10;
-            trigger.drumActive = false;
-            Destroy(trigger.objetActuel);
+            string key = trigger.dictInstrumentState.ElementAt(i).Key;
+            
+            if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
+            {
+                trigger.life = trigger.EditLife(trigger.life, 20f);
+                trigger.dictInstrumentState[key] = false;
+                Destroy(trigger.objetActuel);
+            }
         }
-
-        
     }
 }

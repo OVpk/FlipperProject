@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public float life = 100;
+    
+    public LifeDisplay lifeDisplay;
 
     public GameObject objetActuel;
     
@@ -54,7 +55,7 @@ public class Trigger : MonoBehaviour
             {
                 if (dictInstrumentState[key])
                 {
-                    life = EditLife(life, -20f);
+                    lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, -20f);
                 }
                 dictInstrumentState[key] = false;
                 Destroy(other.gameObject);
@@ -62,18 +63,5 @@ public class Trigger : MonoBehaviour
         }
     }
 
-    public float EditLife(float currentLife, float addedNumber)
-    {
-        currentLife += addedNumber;
-        if (currentLife > 100)
-        {
-            currentLife = 100;
-        }
-        else if (currentLife < 0)
-        {
-            currentLife = 0;
-        }
-
-        return currentLife;
-    }
+    
 }

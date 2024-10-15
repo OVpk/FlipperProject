@@ -7,6 +7,8 @@ using UnityEngine;
 public class TriggerLink : MonoBehaviour
 {
     public Trigger trigger;
+
+    public LifeDisplay lifeDisplay;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,7 @@ public class TriggerLink : MonoBehaviour
             
             if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
             {
-                trigger.life = trigger.EditLife(trigger.life, 20f);
+                lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, 20f);
                 trigger.dictInstrumentState[key] = false;
                 Destroy(trigger.objetActuel);
             }

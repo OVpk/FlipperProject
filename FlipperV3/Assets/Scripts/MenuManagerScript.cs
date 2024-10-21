@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class MenuManagerScript : MonoBehaviour
 {
+    
     public GameObject menu;
     public bool menuOpen;
+    public GameObject gameOverScreen;
+
+    public bool isDead = false;
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !isDead)
         {
             OpenCloseMenu();
         }
@@ -43,5 +47,13 @@ public class MenuManagerScript : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void GameOver()
+    {
+        isDead = true;
+        menu.SetActive(false);
+        gameOverScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 }

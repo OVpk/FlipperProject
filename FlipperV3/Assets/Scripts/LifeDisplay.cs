@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class LifeDisplay : MonoBehaviour
 {
 
+    public MenuManagerScript menuManager;
+
     public float maxLife = 100f;
     public float life = 100f;
 
@@ -33,6 +35,7 @@ public class LifeDisplay : MonoBehaviour
         else if (currentLife < 0)
         {
             currentLife = 0;
+            menuManager.GameOver();
         }
 
         return currentLife;

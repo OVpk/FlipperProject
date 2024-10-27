@@ -9,6 +9,8 @@ public class RailLoopScript : MonoBehaviour
 
     public GameObject startAnimPosition;
 
+    public GameObject ball;
+
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,17 @@ public class RailLoopScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        ball = other.GameObject();
+        
         other.transform.parent.position = startAnimPosition.transform.position;
+        
+        
+        other.transform.parent.GetChild(1).GameObject().SetActive(true);
+        
         other.GetComponent<Animation>().Play("BallInRail");
+
+        
+        
+        //other.transform.parent.GetChild(1).GameObject().SetActive(false);
     }
 }

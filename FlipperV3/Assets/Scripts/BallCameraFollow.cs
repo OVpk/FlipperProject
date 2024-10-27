@@ -12,6 +12,7 @@ public class BallCameraFollow : MonoBehaviour
     void Start()
     {
         distanceWithObjectToFollow = transform.position - objectToFollow.transform.position;
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

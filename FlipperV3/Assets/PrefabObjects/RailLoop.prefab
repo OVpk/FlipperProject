@@ -86,8 +86,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12853861, y: 0.116672754, z: 0.1377143}
-  m_Center: {x: -0.40927243, y: -0.045389652, z: -0.24065672}
+  m_Size: {x: 0.5281453, y: 0.3380654, z: 0.1377143}
+  m_Center: {x: -0.39084172, y: -0.15608597, z: -0.24065672}
 --- !u!114 &9210979734739980035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAnimPosition: {fileID: 5301932731503633817}
+  ball: {fileID: 0}
 --- !u!1001 &2780483845021767392
 PrefabInstance:
   m_ObjectHideFlags: 0

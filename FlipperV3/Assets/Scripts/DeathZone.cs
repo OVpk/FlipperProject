@@ -14,7 +14,7 @@ public class DeathZone : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        Destroy(other.transform.parent.gameObject);
         lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, -50f);
         if (lifeDisplay.life > 0)
         {

@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 3523292579309278208}
   - component: {fileID: 4114982553583338872}
   - component: {fileID: 6972009715535471048}
+  - component: {fileID: 163200844336475683}
   m_Layer: 6
   m_Name: Ball
   m_TagString: Untagged
@@ -294,6 +295,19 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 1
   m_CullingType: 0
+--- !u!114 &163200844336475683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243967106055990509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1afaf7114a09234aa1ebc2a99213ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 1350271258824488258}
 --- !u!1 &5578694205933903857
 GameObject:
   m_ObjectHideFlags: 0

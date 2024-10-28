@@ -24,6 +24,7 @@ public class RailLoopScript : MonoBehaviour
         
     }
 
+    
     private void OnTriggerEnter(Collider other)
     {
         ball = other.GameObject();
@@ -39,4 +40,6 @@ public class RailLoopScript : MonoBehaviour
         
         //other.transform.parent.GetChild(1).GameObject().SetActive(false);
     }
+    
+    
 }

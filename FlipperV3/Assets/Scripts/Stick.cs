@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class Stick : MonoBehaviour
     private Vector3 force;
 
     public string check;
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
         if (key == KeyCode.Mouse0)
         {
@@ -20,7 +22,7 @@ public class Stick : MonoBehaviour
         {
             force = new Vector3(-1,1,0) * strength;
         }
-        collision.rigidbody.AddForce(force);
+        collision.GetComponent<Rigidbody>().AddForce(force);
     }
 
     // Update is called once per frame

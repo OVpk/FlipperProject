@@ -32,7 +32,7 @@ public class LifeDisplay : MonoBehaviour
         {
             currentLife = 100;
         }
-        else if (currentLife < 0)
+        else if (currentLife <= 0)
         {
             currentLife = 0;
             menuManager.GameOver();

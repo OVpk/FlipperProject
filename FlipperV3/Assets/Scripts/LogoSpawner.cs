@@ -10,7 +10,7 @@ public class LogoSpawner : MonoBehaviour
 
     public GameObject logoDrum;
     
-    public string[] listeInstrument;
+    public GameObject logoCymbal;
 
     public float timeBetweenSpawns = 8f;
     
@@ -30,16 +30,27 @@ public class LogoSpawner : MonoBehaviour
         }
         
     }
+
+    public enum InstrumentType
+    {
+        Drum,
+        Cymbal
+    }
+    
+    public InstrumentType[] listeInstrument;
     
     IEnumerator LogoSpawn()
     {
         for (int i = 0; i < listeInstrument.Length; i++)
         {
-            if (listeInstrument[i] == "Drum")
+            switch (listeInstrument[i])
             {
-                Instantiate(logoDrum, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
+                case InstrumentType.Drum :
+                    Instantiate(logoDrum, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform); break;
+                case InstrumentType.Cymbal :
+                    Instantiate(logoCymbal, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform); break;
+                
             }
-
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
     }

@@ -15,7 +15,6 @@ public class DeathZone : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Destroy(other.transform.parent.gameObject);
-        lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, -50f);
         if (lifeDisplay.life > 0)
         {
             Instantiate(ballPrefab, positionSpawn, Quaternion.identity);

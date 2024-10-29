@@ -14,7 +14,8 @@ public class Trigger : MonoBehaviour
     
     public Dictionary<string, bool> dictInstrumentState = new Dictionary<string, bool>
     {
-        {"Drum", false}
+        {"Drum", false},
+        {"Cymbal", false}
     };
     
     // Start is called before the first frame update

@@ -36,4 +36,19 @@ public class TriggerLink : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        for (int i = 0; i < trigger.dictInstrumentState.Count; i++)
+        {
+            string key = trigger.dictInstrumentState.ElementAt(i).Key;
+            
+            if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
+            {
+                lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, 20f);
+                trigger.dictInstrumentState[key] = false;
+                Destroy(trigger.objetActuel);
+            }
+        }
+    }
 }

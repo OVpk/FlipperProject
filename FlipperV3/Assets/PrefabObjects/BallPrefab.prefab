@@ -158,7 +158,6 @@ GameObject:
   - component: {fileID: 4114982553583338872}
   - component: {fileID: 6972009715535471048}
   - component: {fileID: 163200844336475683}
-  - component: {fileID: 1222633659183873527}
   m_Layer: 6
   m_Name: Ball
   m_TagString: Untagged
@@ -309,20 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disabled: {fileID: 1350271258824488258}
---- !u!114 &1222633659183873527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2243967106055990509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1285e58737ec384dbe0b05300a2470c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cymbalModel: {fileID: 2574305395869400091, guid: 2811caa12584bbf499bc4fc099324822,
-    type: 3}
 --- !u!1 &5578694205933903857
 GameObject:
   m_ObjectHideFlags: 0

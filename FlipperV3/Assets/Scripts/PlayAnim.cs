@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayAnim : MonoBehaviour
 {
-    public GameObject cymbalModel;
-    public void Play()
+    public Animation anim;
+    private void OnTriggerEnter(Collider other)
     {
-        cymbalModel.GetComponent<Animation>().Play("moving");
+        anim.Play("moving");
     }
+    
 }

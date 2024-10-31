@@ -33,7 +33,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OutlinerMATT(fin) 2
+  m_Name: OutlinerMATT(fin) 7
   m_Shader: {fileID: -6465566751694194690, guid: 9f7e84f03d1138b40931f59224f5deed,
     type: 3}
   m_Parent: {fileID: 0}
@@ -68,7 +68,7 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 1.3
+    - _Scale: 0.99
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

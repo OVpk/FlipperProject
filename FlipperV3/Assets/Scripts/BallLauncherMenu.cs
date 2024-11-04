@@ -22,6 +22,8 @@ public class BallLauncherMenu : MonoBehaviour
     public Vector3 positionSpawn;
 
     public bool ballOnFieldCheck = false;
+
+    public GameObject thisCanva;
     
     // Start is called before the first frame update
     void Start()
@@ -52,7 +54,7 @@ public class BallLauncherMenu : MonoBehaviour
         {
             transform.localScale = originScale;
             ballOnFieldCheck = false;
-            transform.parent.gameObject.SetActive(false);
+            thisCanva.SetActive(false);
         }
     }
 }

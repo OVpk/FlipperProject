@@ -7647,6 +7647,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 369
       objectReference: {fileID: 0}
+    - target: {fileID: 2814869418968206519, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: logoCymbal
@@ -7656,22 +7661,22 @@ PrefabInstance:
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: listeInstrument.Array.size
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: listeInstrument.Array.data[1]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: listeInstrument.Array.data[2]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: listeInstrument.Array.data[3]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5504554684637178565, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
@@ -7716,6 +7721,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 6301371108784485920}
+--- !u!114 &6301371108784485924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6159273889780887182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ec22608088aa4fbecc510203045fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialManager: {fileID: 1637080588}
+  alreadyActived: 0
+  triggerTutorialStateName: 2
 --- !u!1001 &7444049158890415887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7816,6 +7836,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6301371108784485923}
+    - targetCorrespondingSourceObject: {fileID: 2574305395869400091, guid: 2811caa12584bbf499bc4fc099324822,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6301371108784485924}
   m_SourcePrefab: {fileID: 100100000, guid: 2811caa12584bbf499bc4fc099324822, type: 3}
 --- !u!1001 &8947099097102803592
 PrefabInstance:

@@ -29,7 +29,9 @@ public class TutorialTVmanager : MonoBehaviour
     {
         Step0,
         Step1,
-        Step2
+        Step2,
+        Step3,
+        FinalStep
     }
     
     public TutorialState currentStep = TutorialState.Step0;
@@ -48,6 +50,13 @@ public class TutorialTVmanager : MonoBehaviour
                 { "anim", "ComboGIFanimation" },
                 { "text", "Envoyez la bille, puis frappez la au bon moment avec le batôn pour lui donner une impulsion supplémentaire !" },
                 {"objectiveText", "Frappez le        pour continuer\nAstuce : Frappez la bille avec le bâton de gauche"}
+            }
+        },
+        { TutorialState.Step3, new Dictionary<string, string>
+            {
+                { "anim", "DetectionBoxGIFanimation" },
+                { "text", "Frappez l'instrument correspondant tant qu'il est dans la zone de détection, sinon vous perdez de la vie" },
+                {"objectiveText", "Frappez le        pour continuer\n(Tant qu'il est dans la zone de détection)"}
             }
         }
     };
@@ -93,6 +102,7 @@ public class TutorialTVmanager : MonoBehaviour
         {
             case TutorialState.Step1 : objectiveImage.sprite = drumLogo; break;
             case TutorialState.Step2 : objectiveImage.sprite = cymbalLogo; break;
+            case TutorialState.Step3 : objectiveImage.sprite = drumLogo; break;
         }
         
     }

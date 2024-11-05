@@ -31,6 +31,7 @@ public class TutorialTriggerSwitch : MonoBehaviour
             alreadyActived = true;
             tutorialManager.SwitchStep();
             tutorialManager.InitTV();
+            tutorialManager.ShowObjective();
         }
     }
 
@@ -41,6 +42,7 @@ public class TutorialTriggerSwitch : MonoBehaviour
             alreadyActived = true;
             tutorialManager.SwitchStep();
             tutorialManager.InitTV();
+            tutorialManager.ShowObjective();
         }
     }
 }

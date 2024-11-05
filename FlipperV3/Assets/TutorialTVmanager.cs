@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TutorialTVmanager : MonoBehaviour
@@ -24,6 +25,10 @@ public class TutorialTVmanager : MonoBehaviour
     public Sprite drumLogo;
     
     public Sprite cymbalLogo;
+
+    public GameObject normalGameSystem;
+
+    public LogoSpawner logoSpawner;
     
     public enum TutorialState
     {
@@ -56,9 +61,15 @@ public class TutorialTVmanager : MonoBehaviour
             {
                 { "anim", "DetectionBoxGIFanimation" },
                 { "text", "Frappez l'instrument correspondant tant qu'il est dans la zone de détection, sinon vous perdez de la vie" },
-                {"objectiveText", "Frappez le        pour continuer\n(Tant qu'il est dans la zone de détection)"}
+                {"objectiveText", "Frappez le        pour continuer\n(Seulement quand il est dans la zone de détection)"}
             }
+        },
+        { TutorialState.FinalStep, new Dictionary<string, string>
+        {
+            { "anim", "FinishGIFanimation" },
+            { "text", "Félicitation !\nVous avez terminé ce tutoriel, profitez à présent du reste du jeu" }
         }
+    }
     };
     
     // Start is called before the first frame update
@@ -73,6 +84,17 @@ public class TutorialTVmanager : MonoBehaviour
         if (Input.GetKey(KeyCode.X))
         {
             CloseTV();
+            switch (currentStep)
+            {
+                case TutorialState.Step3 : normalGameSystem.SetActive(true); break;
+                case TutorialState.FinalStep : SceneManager.LoadScene(SceneManager.GetActiveScene().name); break;
+            }
+        }
+
+        if (currentStep == TutorialState.Step3 && logoSpawner.listeEmpty == true)
+        {
+            currentStep = TutorialState.FinalStep;
+            InitTV();
         }
     }
 

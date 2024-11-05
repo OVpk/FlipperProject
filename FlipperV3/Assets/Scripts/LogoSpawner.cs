@@ -13,6 +13,8 @@ public class LogoSpawner : MonoBehaviour
     public GameObject logoCymbal;
 
     public float timeBetweenSpawns = 8f;
+
+    public bool listeEmpty = false;
     
     // Start is called before the first frame update
     void Start()
@@ -53,6 +55,8 @@ public class LogoSpawner : MonoBehaviour
             }
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
+
+        listeEmpty = true;
     }
     
 }

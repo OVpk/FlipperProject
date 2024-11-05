@@ -2410,6 +2410,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &946684193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2814869418968206519, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6206974825446545885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &953721700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,6 +3999,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481015829}
   m_CullTransparentMesh: 1
+--- !u!114 &1517471031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6206974825446545885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e136f438b94c347b34a54401f31cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519861644
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,6 +4346,8 @@ MonoBehaviour:
   objectiveImage: {fileID: 246838641}
   drumLogo: {fileID: 21300000, guid: e98fdd79af047d040a88da47cbc569d7, type: 3}
   cymbalLogo: {fileID: 21300000, guid: 2f7f79e528b785f44ae523823a7cd398, type: 3}
+  normalGameSystem: {fileID: 946684193}
+  logoSpawner: {fileID: 1517471031}
   currentStep: 0
 --- !u!1001 &1650602779
 PrefabInstance:
@@ -7661,7 +7681,7 @@ PrefabInstance:
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: listeInstrument.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}

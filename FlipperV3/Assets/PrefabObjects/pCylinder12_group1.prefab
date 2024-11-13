@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4314788818833686731}
   - component: {fileID: 3695818947157754043}
   - component: {fileID: 8719243725706035339}
-  - component: {fileID: 3933052031511344461}
+  - component: {fileID: 5163463428454746401}
   m_Layer: 0
   m_Name: pCylinder12_group1
   m_TagString: CymbalLogoTag
@@ -124,7 +124,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2713695, y: 1.0184636, z: 4.8471727}
   m_Center: {x: 1.9767482, y: 10.674549, z: 3.1187224}
---- !u!114 &3933052031511344461
+--- !u!114 &5163463428454746401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2574305395869400091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
+  m_Script: {fileID: 11500000, guid: f1285e58737ec384dbe0b05300a2470c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 0}
-  lifeDisplay: {fileID: 0}
+  anim: {fileID: 3695818947157754043}

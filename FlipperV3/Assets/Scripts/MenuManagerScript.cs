@@ -37,6 +37,12 @@ public class MenuManagerScript : MonoBehaviour
         
     }
 
+    public void MainMenuReturn()
+    {
+        SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
+    }
+
     public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();

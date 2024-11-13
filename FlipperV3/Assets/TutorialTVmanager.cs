@@ -46,7 +46,7 @@ public class TutorialTVmanager : MonoBehaviour
         { TutorialState.Step1, new Dictionary<string, string>
             {
                 { "anim", "DifferentMovesGIFanimation" },
-                { "text", "Selon la partie du pad touchée par la bille, jaugez l'angle de tir (+ à l'extérieur = revert, + à l'intérieur = direct)" },
+                { "text", "Selon la partie du pad qui frappe la bille, l'angle de tir est différent" },
                 {"objectiveText", "Frappez le        pour continuer\nAstuce : Faites un revert avec le pad violet"}
             }
         },

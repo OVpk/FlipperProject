@@ -7,12 +7,20 @@ using UnityEngine.SceneManagement;
 public class MenuManagerScript : MonoBehaviour
 {
     
+    public Animator PauseGIFanimator;
+    public Animator GameOverGIFanimator;
+    
     public GameObject menu;
     public bool menuOpen;
     public GameObject gameOverScreen;
 
     public bool isDead = false;
 
+    private void Start()
+    {
+        
+        
+    }
 
     private void Update()
     {
@@ -28,6 +36,7 @@ public class MenuManagerScript : MonoBehaviour
         menu.SetActive(menuOpen);
         if (menuOpen)
         {
+            PauseGIFanimator.Play("PauseGIFanimation");
             Time.timeScale = 0;
         }
         else
@@ -60,6 +69,7 @@ public class MenuManagerScript : MonoBehaviour
         isDead = true;
         menu.SetActive(false);
         gameOverScreen.SetActive(true);
+        GameOverGIFanimator.Play("GameOverGIFanimation");
         Time.timeScale = 0;
     }
 }

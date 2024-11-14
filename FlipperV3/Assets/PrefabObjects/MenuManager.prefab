@@ -2760,6 +2760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d3d43e64376624dadea5d1b517f5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseGIFanimator: {fileID: 2882775523416061383}
+  GameOverGIFanimator: {fileID: 771825042790211637}
   menu: {fileID: 2265412044319258687}
   menuOpen: 0
   gameOverScreen: {fileID: 6140774477129451314}
@@ -2767,6 +2769,12 @@ MonoBehaviour:
 --- !u!1 &2265412044319258687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4335300825097129723, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2547429223980938948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2882775523416061383 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 818498932382532355, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
     type: 3}
   m_PrefabInstance: {fileID: 2547429223980938948}
   m_PrefabAsset: {fileID: 0}

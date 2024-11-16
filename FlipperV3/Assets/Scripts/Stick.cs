@@ -5,39 +5,54 @@ using UnityEngine;
 
 public class Stick : MonoBehaviour
 {
-    public KeyCode key;
+    
     public Animation anim;
+    private string animName;
     public float strength = 1;
     private Vector3 force;
 
-    public string check;
-
-    private void OnTriggerEnter(Collider collision)
+    public enum KeyPossibility
     {
-        if (key == KeyCode.Mouse0)
+        L2,
+        R2
+    }
+    
+    public KeyPossibility choiceKey;
+
+    private string inputAxisName;
+
+    private void Start()
+    {
+        switch (choiceKey)
         {
-            force = new Vector3(1,1,0) * strength;
+            case KeyPossibility.L2 : 
+                force = new Vector3(1,1,0) * strength;
+                inputAxisName = "L2";
+                animName = "StickLeft";
+                break;
+            case KeyPossibility.R2 : 
+                force = new Vector3(-1,1,0) * strength;
+                inputAxisName = "R2";
+                animName = "StickRight";
+                break;
         }
-        else
-        {
-            force = new Vector3(-1,1,0) * strength;
-        }
-        collision.GetComponent<Rigidbody>().AddForce(force);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    { 
+        other.GetComponent<Rigidbody>().AddForce(force);
     }
 
     // Update is called once per frame
     void Update()
         {
-            if (Input.GetKey(key))
+            float axisValue = 0f;
+        
+            axisValue = Input.GetAxis(inputAxisName);
+            
+            if (axisValue > 0.1f)
             {
-                if (check == "Left")
-                {
-                    anim.Play("StickLeft");
-                }
-                else
-                {
-                    anim.Play("StickRight");
-                }
+                anim.Play(animName);
             }
     
         }

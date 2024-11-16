@@ -115,10 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de77dfd2bfc00374e8719ffaa11ef46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 324
   anim: {fileID: 456545151378961671}
   strength: 2000
-  check: Right
+  choiceKey: 1
 --- !u!135 &1762204120472904651
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -572,10 +571,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de77dfd2bfc00374e8719ffaa11ef46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 323
   anim: {fileID: 3358055205731525468}
   strength: 2000
-  check: Left
+  choiceKey: 0
 --- !u!135 &8482205519533672595
 SphereCollider:
   m_ObjectHideFlags: 0

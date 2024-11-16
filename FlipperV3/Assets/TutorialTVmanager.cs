@@ -81,7 +81,7 @@ public class TutorialTVmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.X))
+        if (Input.GetKey(KeyCode.JoystickButton1))
         {
             CloseTV();
             switch (currentStep)

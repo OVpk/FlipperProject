@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BallLauncherMenu : MonoBehaviour
@@ -35,7 +33,7 @@ public class BallLauncherMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(key))
+        if (Input.GetAxis("DPadVertical") < 0)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, finalScale, speed * Time.deltaTime);
         }

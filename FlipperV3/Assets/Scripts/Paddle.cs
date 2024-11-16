@@ -11,12 +11,26 @@ public class Paddle : MonoBehaviour
     public HingeJoint hingeJoint;
     private JointSpring jointSpring;
 
-    public KeyCode key;
+    private KeyCode key;
+
+    public enum KeyPossibility
+    {
+        L1,
+        R1
+    }
+
+    public KeyPossibility choiceKey;
     
     // Start is called before the first frame update
     void Start()
     {
         jointSpring = hingeJoint.spring;
+
+        switch (choiceKey)
+        {
+            case KeyPossibility.L1 : key = KeyCode.JoystickButton4; break;
+            case KeyPossibility.R1 : key = KeyCode.JoystickButton5; break;
+        }
     }
 
     // Update is called once per frame

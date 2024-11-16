@@ -1,33 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    public float     decal;
-    public float     accel;
-    public float     loadingSpeed = 1;
-    public KeyCode   key          = KeyCode.Space;
+    public float decal;
+    public float accel;
+    public float loadingSpeed = 1;
     public Rigidbody rb;
 
     void Update()
     {
-        if (Input.GetKeyUp(key))
-        {
-            rb.isKinematic = false;
-        }
-        
-        if (Input.GetKey(key))
+        bool isDPadPressed = Mathf.Approximately(Input.GetAxis("DPadVertical"), -1f);
+
+        if (isDPadPressed)
         {
             rb.isKinematic = false;
 
             if (transform.localPosition.y > decal)
             {
-                rb.velocity += -transform.up * loadingSpeed;
+                if (!rb.isKinematic)
+                {
+                    rb.velocity += -transform.up * loadingSpeed;
+                }
             }
             else
             {
-                rb.velocity    = Vector3.zero;
+                rb.velocity = Vector3.zero;
                 rb.isKinematic = true;
             }
         }
@@ -35,11 +32,12 @@ public class Shooter : MonoBehaviour
         {
             if (transform.localPosition.y < 0)
             {
-                rb.velocity    += transform.up * accel;
+                rb.isKinematic = false;
+                rb.velocity += transform.up * accel;
             }
             else
             {
-                rb.isKinematic          = true;
+                rb.isKinematic = true;
                 transform.localPosition = Vector3.zero;
             }
         }

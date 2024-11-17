@@ -255,11 +255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
-  cursorRectTransform: {fileID: 555621823}
+  cursor: {fileID: 555621823}
   canvas: {fileID: 2007535530}
-  buttons:
-  - {fileID: 1383544487}
-  - {fileID: 1179184671}
 --- !u!1 &475564871
 GameObject:
   m_ObjectHideFlags: 0

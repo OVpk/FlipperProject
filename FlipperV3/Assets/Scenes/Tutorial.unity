@@ -5478,6 +5478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnBallUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4183930448726968436, guid: e64223c522223894683387b78b46d6a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090838590337358100, guid: e64223c522223894683387b78b46d6a6,
         type: 3}
       propertyPath: spawnPoint

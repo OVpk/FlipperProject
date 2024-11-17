@@ -17,6 +17,8 @@ public class Trigger : MonoBehaviour
         {"Drum", false},
         {"Cymbal", false}
     };
+
+    public OutlinerIndication outlinerIndication;
     
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,11 @@ public class Trigger : MonoBehaviour
             if (other.gameObject.tag == key + "LogoTag")
             {
                 dictInstrumentState[key] = true;
+                switch (key)
+                {
+                    case "Drum" : outlinerIndication.StartScintillement(outlinerIndication.drumOutliners); break;
+                    case "Cymbal" : outlinerIndication.StartScintillement(outlinerIndication.cymbalOutliners); break;
+                }
             }
         }
         objetActuel = other.gameObject;
@@ -60,6 +67,12 @@ public class Trigger : MonoBehaviour
                 }
                 dictInstrumentState[key] = false;
                 Destroy(other.gameObject);
+                
+                switch (key)
+                {
+                    case "Drum" : outlinerIndication.StopScintillement(outlinerIndication.drumOutliners); break;
+                    case "Cymbal" : outlinerIndication.StopScintillement(outlinerIndication.cymbalOutliners); break;
+                }
             }
         }
     }

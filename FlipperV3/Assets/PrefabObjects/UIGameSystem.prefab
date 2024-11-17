@@ -50,6 +50,7 @@ MonoBehaviour:
     type: 3}
   logoCymbal: {fileID: 0}
   timeBetweenSpawns: 8
+  listeEmpty: 0
   listeInstrument: 0000000000000000000000000000000000000000
 --- !u!1 &2814869418968206519
 GameObject:
@@ -195,6 +196,7 @@ GameObject:
   - component: {fileID: 7707291502266059234}
   - component: {fileID: 4446750725985035437}
   - component: {fileID: 8636608315667273985}
+  - component: {fileID: 7655633490133974323}
   m_Layer: 5
   m_Name: DetectionBox
   m_TagString: Untagged
@@ -318,6 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeDisplay: {fileID: 1900408734505408674}
   objetActuel: {fileID: 0}
+  outlinerIndication: {fileID: 7655633490133974323}
 --- !u!50 &8636608315667273985
 Rigidbody2D:
   serializedVersion: 4
@@ -345,6 +348,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7655633490133974323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978842779036869464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0a6c5fa65ce574a8a634d53c9b29aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drumOutliners:
+  - {fileID: 2100000, guid: 342af8278bec88149898a96771df5ce0, type: 2}
+  - {fileID: 2100000, guid: 0c93619bce0649142b590a1c120aac9d, type: 2}
+  cymbalOutliners:
+  - {fileID: 2100000, guid: fd442bd6ffdff8e44aa2be9cd7307530, type: 2}
+  - {fileID: 2100000, guid: 994fd1d227bad6344bacdc4dac3b80e8, type: 2}
+  - {fileID: 2100000, guid: 740f55fde1a67ec4a87bca3bd17ad839, type: 2}
+  - {fileID: 2100000, guid: 98b3afe780d05bb4fa1624b412d1c803, type: 2}
 --- !u!1 &4821343969195521307
 GameObject:
   m_ObjectHideFlags: 0

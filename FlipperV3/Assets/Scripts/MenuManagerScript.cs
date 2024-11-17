@@ -24,7 +24,7 @@ public class MenuManagerScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isDead)
+        if (Input.GetKeyDown(KeyCode.JoystickButton9) && !isDead)
         {
             OpenCloseMenu();
         }

@@ -116,7 +116,7 @@ MonoBehaviour:
   targetPosition: 75
   originPosition: 0
   hingeJoint: {fileID: 3130714360002327739}
-  key: 276
+  choiceKey: 0
 --- !u!1001 &6298613772420884625
 PrefabInstance:
   m_ObjectHideFlags: 0

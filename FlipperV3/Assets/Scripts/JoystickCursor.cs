@@ -19,8 +19,8 @@ public class JoystickCursor : MonoBehaviour
 
         cursorPosition = cursor.anchoredPosition;
 
-        cursorPosition.x += horizontal * moveSpeed * Time.deltaTime;
-        cursorPosition.y += vertical * moveSpeed * Time.deltaTime;
+        cursorPosition.x += horizontal * moveSpeed * Time.unscaledTime;
+        cursorPosition.y += vertical * moveSpeed * Time.unscaledTime;
 
         cursorPosition.x = Mathf.Clamp(cursorPosition.x, 0, canvas.rect.width);
         cursorPosition.y = Mathf.Clamp(cursorPosition.y, 0, canvas.rect.height);

@@ -233,9 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decal: -4
-  accel: 6
+  accel: 10
   loadingSpeed: 0.1
-  key: 274
   rb: {fileID: 8124089180590579792}
 --- !u!1 &5823295995097438734
 GameObject:

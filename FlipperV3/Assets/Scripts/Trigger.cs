@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    
-    public LifeDisplay lifeDisplay;
 
     public GameObject objetActuel;
     
@@ -19,18 +17,6 @@ public class Trigger : MonoBehaviour
     };
 
     public OutlinerIndication outlinerIndication;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -61,10 +47,6 @@ public class Trigger : MonoBehaviour
             
             if (other.gameObject.tag == key + "LogoTag")
             {
-                if (dictInstrumentState[key])
-                {
-                    lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, -20f);
-                }
                 dictInstrumentState[key] = false;
                 Destroy(other.gameObject);
                 

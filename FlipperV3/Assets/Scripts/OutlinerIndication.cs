@@ -16,31 +16,27 @@ public class OutlinerIndication : MonoBehaviour
         StopScintillement(drumOutliners);
         StopScintillement(cymbalOutliners);
     }
+    
+    public float delayTime = 0.5f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public IEnumerator Scintillement(Material[] instrumentOutliners)
+    public IEnumerator Scintillement(Material[] instrumentOutliners, float delay)
     {
         foreach (var element in instrumentOutliners)
         {
             element.color = Color.red;
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(delay);
         foreach (var element in instrumentOutliners)
         {
             element.color = Color.black;
         }
-        yield return new WaitForSeconds(0.5f);
-        currentCoroutine = StartCoroutine(Scintillement(instrumentOutliners));
+        yield return new WaitForSeconds(delay);
+        currentCoroutine = StartCoroutine(Scintillement(instrumentOutliners, delay*0.85f));
     }
 
     public void StartScintillement(Material[] instrumentOutliners)
     {
-        currentCoroutine = StartCoroutine(Scintillement(instrumentOutliners));
+        currentCoroutine = StartCoroutine(Scintillement(instrumentOutliners, delayTime));
     }
     
     public void StopScintillement(Material[] instrumentOutliners)

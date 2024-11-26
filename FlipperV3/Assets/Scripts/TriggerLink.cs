@@ -8,19 +8,7 @@ public class TriggerLink : MonoBehaviour
 {
     public Trigger trigger;
 
-    public LifeDisplay lifeDisplay;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public ScoreManager scoreManager;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -30,7 +18,7 @@ public class TriggerLink : MonoBehaviour
             
             if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
             {
-                lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, 20f);
+                scoreManager.AddScore(100);
                 trigger.dictInstrumentState[key] = false;
                 Destroy(trigger.objetActuel);
             }
@@ -45,7 +33,7 @@ public class TriggerLink : MonoBehaviour
             
             if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
             {
-                lifeDisplay.life = lifeDisplay.EditLife(lifeDisplay.life, 20f);
+                scoreManager.AddScore(100);
                 trigger.dictInstrumentState[key] = false;
                 Destroy(trigger.objetActuel);
             }

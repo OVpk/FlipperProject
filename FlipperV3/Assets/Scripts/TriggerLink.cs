@@ -12,35 +12,22 @@ public class TriggerLink : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        for (int i = 0; i < trigger.dictInstrumentState.Count; i++)
-        {
-            string key = trigger.dictInstrumentState.ElementAt(i).Key;
-            
-            if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
-            {
-                scoreManager.AddScore(100);
-                trigger.dictInstrumentState[key] = false;
-                Destroy(trigger.objetActuel);
-
-                other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-            }
-        }
+        CheckInstrumentTrigger(other.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        for (int i = 0; i < trigger.dictInstrumentState.Count; i++)
+        CheckInstrumentTrigger(other.gameObject);
+    }
+
+    private void CheckInstrumentTrigger(GameObject other)
+    {
+        if (trigger.dictInstrumentState[gameObject.tag])
         {
-            string key = trigger.dictInstrumentState.ElementAt(i).Key;
-            
-            if (gameObject.tag == key + "LogoTag" && trigger.dictInstrumentState[key])
-            {
-                scoreManager.AddScore(100);
-                trigger.dictInstrumentState[key] = false;
-                Destroy(trigger.objetActuel);
-                
-                other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-            }
+            scoreManager.AddScore(100);
+            trigger.EndInstrument();
+
+            other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         }
     }
 }

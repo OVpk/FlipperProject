@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 320289928}
   m_Layer: 0
   m_Name: CymbaleAndLoop
-  m_TagString: CymbalLogoTag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -999,18 +999,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6206974825446545885}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &385424639 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4446750725985035437, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6206974825446545885}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2edcef17265f0442b3d1ecee76ce27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &398693200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,6 +2527,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6206974825446545885}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &946684196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946684193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2edcef17265f0442b3d1ecee76ce27a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlinerIndication: {fileID: 1724531276}
+  hasStarted: 0
+  timeBetweenSpawns: 6
+  listeEmpty: 0
+  currentInstrument: 
+  listeInstrument: 0000000001000000000000000100000000000000
 --- !u!1001 &978422592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2774,7 +2780,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1245614168529779083, guid: 855af723545a7744e9f8a34805c47b0d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4059,18 +4066,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485390671}
   m_CullTransparentMesh: 1
---- !u!114 &1517471031 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3627206964310859218, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6206974825446545885}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65e136f438b94c347b34a54401f31cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1563123835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4787,6 +4782,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0680f7b8d0e33874784bbd44e64ca653, type: 3}
+--- !u!1 &1724531274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5504554684637178565, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6206974825446545885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1724531276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724531274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0a6c5fa65ce574a8a634d53c9b29aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drumOutliners:
+  - {fileID: 2100000, guid: 342af8278bec88149898a96771df5ce0, type: 2}
+  - {fileID: 2100000, guid: 0c93619bce0649142b590a1c120aac9d, type: 2}
+  cymbalOutliners:
+  - {fileID: 2100000, guid: fd442bd6ffdff8e44aa2be9cd7307530, type: 2}
+  - {fileID: 2100000, guid: 994fd1d227bad6344bacdc4dac3b80e8, type: 2}
+  - {fileID: 2100000, guid: 740f55fde1a67ec4a87bca3bd17ad839, type: 2}
+  - {fileID: 2100000, guid: 98b3afe780d05bb4fa1624b412d1c803, type: 2}
+  delayTime: 0.5
 --- !u!1 &1727647287
 GameObject:
   m_ObjectHideFlags: 0
@@ -6353,7 +6375,7 @@ GameObject:
   - component: {fileID: 543450652210432079}
   m_Layer: 0
   m_Name: Queen Drum set
-  m_TagString: CymbalLogoTag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6580,7 +6602,7 @@ PrefabInstance:
         type: 3}
       propertyPath: trigger
       value: 
-      objectReference: {fileID: 385424639}
+      objectReference: {fileID: 946684196}
     - target: {fileID: 2449635874500964517, guid: 1291fb4c94490724a8589318118393fc,
         type: 3}
       propertyPath: lifeDisplay
@@ -6679,13 +6701,13 @@ PrefabInstance:
     - target: {fileID: 7237738545106839003, guid: 1291fb4c94490724a8589318118393fc,
         type: 3}
       propertyPath: m_TagString
-      value: CymbalLogoTag
+      value: Cymbal
       objectReference: {fileID: 0}
     - target: {fileID: 7347173466583136201, guid: 1291fb4c94490724a8589318118393fc,
         type: 3}
       propertyPath: tutorialManager
       value: 
-      objectReference: {fileID: 1637080588}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6711,9 +6733,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3608234450153639759, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
         type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 3608234450153639759, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
+        type: 3}
       propertyPath: logoSpawner
       value: 
-      objectReference: {fileID: 1517471031}
+      objectReference: {fileID: 0}
     - target: {fileID: 3608234450153639759, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
         type: 3}
       propertyPath: normalGameSystem
@@ -7345,7 +7372,7 @@ PrefabInstance:
         type: 3}
       propertyPath: trigger
       value: 
-      objectReference: {fileID: 385424639}
+      objectReference: {fileID: 946684196}
     - target: {fileID: 6736465388590711509, guid: e0ce850eea4c1054999eb92bf32b0e03,
         type: 3}
       propertyPath: lifeDisplay
@@ -7380,6 +7407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8706211113871006130, guid: e0ce850eea4c1054999eb92bf32b0e03,
+        type: 3}
+      propertyPath: m_TagString
+      value: Drum
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7535,6 +7567,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4821343969195521307, guid: edf286fa9f39b504e8c0ff5b34b5d32f, type: 3}
+    - {fileID: 1365273523576855286, guid: edf286fa9f39b504e8c0ff5b34b5d32f, type: 3}
+    - {fileID: 3978842779036869464, guid: edf286fa9f39b504e8c0ff5b34b5d32f, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5645968211050314260, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
@@ -7548,7 +7582,15 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 495664080}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5504554684637178565, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1724531276}
+    - targetCorrespondingSourceObject: {fileID: 2814869418968206519, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 946684196}
   m_SourcePrefab: {fileID: 100100000, guid: edf286fa9f39b504e8c0ff5b34b5d32f, type: 3}
 --- !u!4 &6301371108784485917 stripped
 Transform:
@@ -7584,11 +7626,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: pCylinder12_group1
       objectReference: {fileID: 0}
+    - target: {fileID: 2574305395869400091, guid: 2811caa12584bbf499bc4fc099324822,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3933052031511344461, guid: 2811caa12584bbf499bc4fc099324822,
         type: 3}
       propertyPath: trigger
       value: 
-      objectReference: {fileID: 385424639}
+      objectReference: {fileID: 0}
     - target: {fileID: 3933052031511344461, guid: 2811caa12584bbf499bc4fc099324822,
         type: 3}
       propertyPath: lifeDisplay

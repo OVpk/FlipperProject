@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-
-    public GameObject objetActuel;
     
     public Dictionary<string, bool> dictInstrumentState = new Dictionary<string, bool>
     {
@@ -18,45 +16,75 @@ public class Trigger : MonoBehaviour
 
     public OutlinerIndication outlinerIndication;
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void StartInstrument()
     {
-        for (int i = 0; i < dictInstrumentState.Count; i++)
+        dictInstrumentState[currentInstrument] = true;
+        
+        switch (currentInstrument)
         {
-            string key = dictInstrumentState.ElementAt(i).Key;
-            
-            if (other.gameObject.tag == key + "LogoTag")
-            {
-                dictInstrumentState[key] = true;
-                switch (key)
-                {
-                    case "Drum" : outlinerIndication.StartScintillement(outlinerIndication.drumOutliners); break;
-                    case "Cymbal" : outlinerIndication.StartScintillement(outlinerIndication.cymbalOutliners); break;
-                }
-            }
+            case "Drum" : outlinerIndication.StartScintillement(outlinerIndication.drumOutliners); break;
+            case "Cymbal" : outlinerIndication.StartScintillement(outlinerIndication.cymbalOutliners); break;
         }
-        objetActuel = other.gameObject;
     }
 
 
 
-    private void OnTriggerExit2D(Collider2D other)
+    public void EndInstrument()
     {
-        for (int i = 0; i < dictInstrumentState.Count; i++)
+        dictInstrumentState[currentInstrument] = false;
+        
+        switch (currentInstrument)
         {
-            string key = dictInstrumentState.ElementAt(i).Key;
-            
-            if (other.gameObject.tag == key + "LogoTag")
-            {
-                dictInstrumentState[key] = false;
-                Destroy(other.gameObject);
-                
-                switch (key)
-                {
-                    case "Drum" : outlinerIndication.StopScintillement(outlinerIndication.drumOutliners); break;
-                    case "Cymbal" : outlinerIndication.StopScintillement(outlinerIndication.cymbalOutliners); break;
-                }
-            }
+            case "Drum" : outlinerIndication.StopScintillement(outlinerIndication.drumOutliners); break;
+            case "Cymbal" : outlinerIndication.StopScintillement(outlinerIndication.cymbalOutliners); break;
         }
+    }
+    
+    
+    public bool hasStarted;
+
+    public float timeBetweenSpawns = 8f;
+
+    public bool listeEmpty = false;
+
+    public string currentInstrument;
+    
+    void Update()
+    {
+        if (!hasStarted && Input.anyKeyDown)
+        {
+            hasStarted = true;
+            StartCoroutine(LogoSpawn());
+        }
+        
+    }
+
+    public enum InstrumentType
+    {
+        Drum,
+        Cymbal
+    }
+    
+    public InstrumentType[] listeInstrument;
+    
+    IEnumerator LogoSpawn()
+    {
+        for (int i = 0; i < listeInstrument.Length; i++)
+        {
+            switch (listeInstrument[i])
+            {
+                case InstrumentType.Drum :
+                    currentInstrument = "Drum"; break;
+                case InstrumentType.Cymbal :
+                    currentInstrument = "Cymbal"; break;
+            }
+            StartInstrument();
+            yield return new WaitForSeconds(timeBetweenSpawns);
+            EndInstrument();
+            
+        }
+
+        listeEmpty = true;
     }
 
     

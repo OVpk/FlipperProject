@@ -19,7 +19,7 @@ public class OutlinerIndication : MonoBehaviour
     
     public float delayTime = 0.5f;
 
-    public IEnumerator Scintillement(Material[] instrumentOutliners, float delay)
+    private IEnumerator Scintillement(Material[] instrumentOutliners, float delay)
     {
         foreach (var element in instrumentOutliners)
         {

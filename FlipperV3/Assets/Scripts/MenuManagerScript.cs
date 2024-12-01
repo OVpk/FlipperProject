@@ -8,23 +8,13 @@ public class MenuManagerScript : MonoBehaviour
 {
     
     public Animator PauseGIFanimator;
-    public Animator GameOverGIFanimator;
     
     public GameObject menu;
     public bool menuOpen;
-    public GameObject gameOverScreen;
-
-    public bool isDead = false;
-
-    private void Start()
-    {
-        
-        
-    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton9) && !isDead)
+        if (Input.GetKeyDown(KeyCode.JoystickButton9))
         {
             OpenCloseMenu();
         }
@@ -62,14 +52,5 @@ public class MenuManagerScript : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-    }
-
-    public void GameOver()
-    {
-        isDead = true;
-        menu.SetActive(false);
-        gameOverScreen.SetActive(true);
-        GameOverGIFanimator.Play("GameOverGIFanimation");
-        Time.timeScale = 0;
     }
 }

@@ -149,6 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0acc1d87c1725443be4bd65faa422d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.5
+  moveSpeed: 250
   cursor: {fileID: 7021875086606360680}
   canvas: {fileID: 0}

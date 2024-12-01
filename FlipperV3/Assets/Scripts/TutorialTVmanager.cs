@@ -28,7 +28,7 @@ public class TutorialTVmanager : MonoBehaviour
 
     public GameObject normalGameSystem;
 
-    public LogoSpawner logoSpawner;
+    public Trigger trigger;
     
     public enum TutorialState
     {
@@ -65,28 +65,31 @@ public class TutorialTVmanager : MonoBehaviour
             }
         },
         { TutorialState.FinalStep, new Dictionary<string, string>
-        {
-            { "anim", "FinishGIFanimation" },
-            { "text", "Félicitation !\nVous avez terminé ce tutoriel, profitez à présent du reste du jeu" }
+            {
+                { "anim", "FinishGIFanimation" },
+                { "text", "Félicitation !\nVous avez terminé ce tutoriel, profitez à présent du reste du jeu" },
+                {"objectiveText", ""}
+            }
         }
-    }
     };
 
+    private bool tutorialIsHere = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.JoystickButton1))
+        if (Input.GetKey(KeyCode.JoystickButton1) && tutorialIsHere)
         {
-            CloseTV();
             switch (currentStep)
             {
                 case TutorialState.Step3 : normalGameSystem.SetActive(true); break;
-                case TutorialState.FinalStep : SceneManager.LoadScene(SceneManager.GetActiveScene().name); break;
+                case TutorialState.FinalStep : SceneManager.LoadScene("Menu"); return;
             }
+            ShowObjective();
+            CloseTV();
         }
 
-        if (currentStep == TutorialState.Step3 && logoSpawner.listeEmpty == true)
+        if (currentStep == TutorialState.Step3 && trigger.listeEmpty == true)
         {
             currentStep = TutorialState.FinalStep;
             InitTV();
@@ -95,6 +98,8 @@ public class TutorialTVmanager : MonoBehaviour
 
     public void InitTV()
     {
+        tutorialIsHere = true;
+        
         tutorialUIcanva.SetActive(true);
         allTVanim.Play("TVtutorialCome");
         GIFanimator.Play(stepValues[currentStep]["anim"]);
@@ -103,6 +108,8 @@ public class TutorialTVmanager : MonoBehaviour
 
     public void CloseTV()
     {
+        tutorialIsHere = false;
+        
         allTVanim.Play("TVtutorialLeaves");
     }
 

@@ -11,18 +11,6 @@ public class TutorialTriggerSwitch : MonoBehaviour
     public bool alreadyActived = false;
 
     public TutorialTVmanager.TutorialState triggerTutorialStateName;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +19,6 @@ public class TutorialTriggerSwitch : MonoBehaviour
             alreadyActived = true;
             tutorialManager.SwitchStep();
             tutorialManager.InitTV();
-            tutorialManager.ShowObjective();
         }
     }
 

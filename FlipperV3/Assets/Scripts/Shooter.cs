@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -44,4 +45,5 @@ public class Shooter : MonoBehaviour
 
         transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
     }
+    
 }

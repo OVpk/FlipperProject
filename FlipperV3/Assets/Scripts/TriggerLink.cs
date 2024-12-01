@@ -21,6 +21,8 @@ public class TriggerLink : MonoBehaviour
                 scoreManager.AddScore(100);
                 trigger.dictInstrumentState[key] = false;
                 Destroy(trigger.objetActuel);
+
+                other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
             }
         }
     }
@@ -36,6 +38,8 @@ public class TriggerLink : MonoBehaviour
                 scoreManager.AddScore(100);
                 trigger.dictInstrumentState[key] = false;
                 Destroy(trigger.objetActuel);
+                
+                other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
             }
         }
     }

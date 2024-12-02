@@ -20,12 +20,16 @@ public class TriggerLink : MonoBehaviour
         CheckInstrumentTrigger(other.gameObject);
     }
 
+
     private void CheckInstrumentTrigger(GameObject other)
     {
         if (trigger.dictInstrumentState[gameObject.tag])
         {
+            
             scoreManager.AddScore(100);
-            trigger.EndInstrument();
+
+            trigger.valideAction = true;
+            trigger.EndInstrument(true);
 
             other.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         }

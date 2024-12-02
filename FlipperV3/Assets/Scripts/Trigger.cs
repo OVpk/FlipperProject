@@ -27,9 +27,10 @@ public class Trigger : MonoBehaviour
         }
     }
 
-
-
-    public void EndInstrument()
+    public AudioSource endActionSong;
+    public AudioClip confirmation;
+    public AudioClip fail;
+    public void EndInstrument(bool byPlayer)
     {
         dictInstrumentState[currentInstrument] = false;
         
@@ -38,12 +39,24 @@ public class Trigger : MonoBehaviour
             case "Drum" : outlinerIndication.StopScintillement(outlinerIndication.drumOutliners); break;
             case "Cymbal" : outlinerIndication.StopScintillement(outlinerIndication.cymbalOutliners); break;
         }
+
+        if (byPlayer)
+        {
+            endActionSong.clip = confirmation;
+        }
+        else
+        {
+            endActionSong.clip = fail;
+        }
+        endActionSong.Play();
     }
     
     
     public bool hasStarted;
 
-    public float timeBetweenSpawns = 8f;
+    public float timeToAct = 6f;
+
+    public float delayBetweenActions = 2f;
 
     public bool listeEmpty = false;
 
@@ -66,6 +79,8 @@ public class Trigger : MonoBehaviour
     }
     
     public InstrumentType[] listeInstrument;
+
+    public bool valideAction = false;
     
     IEnumerator LogoSpawn()
     {
@@ -79,8 +94,16 @@ public class Trigger : MonoBehaviour
                     currentInstrument = "Cymbal"; break;
             }
             StartInstrument();
-            yield return new WaitForSeconds(timeBetweenSpawns);
-            EndInstrument();
+            yield return new WaitForSeconds(timeToAct);
+            if (valideAction)
+            {
+                valideAction = !valideAction;
+            }
+            else
+            {
+                EndInstrument(false);
+            }
+            yield return new WaitForSeconds(delayBetweenActions);
             
         }
 

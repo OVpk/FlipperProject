@@ -14,22 +14,21 @@ public class TutorialTriggerSwitch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!alreadyActived && triggerTutorialStateName == tutorialManager.currentStep)
-        {
-            alreadyActived = true;
-            tutorialManager.SwitchStep();
-            tutorialManager.InitTV();
-        }
+        TutorialEvent();
     }
 
     private void OnCollisionEnter(Collision other)
+    {
+        TutorialEvent();
+    }
+
+    private void TutorialEvent()
     {
         if (!alreadyActived && triggerTutorialStateName == tutorialManager.currentStep)
         {
             alreadyActived = true;
             tutorialManager.SwitchStep();
             tutorialManager.InitTV();
-            tutorialManager.ShowObjective();
         }
     }
 }

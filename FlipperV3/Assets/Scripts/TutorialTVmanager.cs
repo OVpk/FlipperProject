@@ -80,6 +80,7 @@ public class TutorialTVmanager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.JoystickButton1) && tutorialIsHere)
         {
+            Time.timeScale = 1;
             switch (currentStep)
             {
                 case TutorialState.Step3 : normalGameSystem.SetActive(true); break;

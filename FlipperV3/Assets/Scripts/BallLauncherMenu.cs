@@ -2,36 +2,24 @@ using UnityEngine;
 
 public class BallLauncherMenu : MonoBehaviour
 {
-    
-    public KeyCode key;
-
-    public Vector3 originScale = new Vector3(0f, 0f, 0f);
-
-    public Vector3 finalScale = new Vector3(1f, 1f, 1f);
-
+    private Vector3 originScale = new Vector3(0f, 0f, 0f);
+    private Vector3 finalScale = new Vector3(1f, 1f, 1f);
     public Vector3 minimumScale = new Vector3(0.9f, 0.9f, 0.9f);
 
     public float speed = 2f;
     
-    public GameObject ballPrefab;
-
-    public GameObject spawnPoint;
-
-    public Vector3 positionSpawn;
-
-    public bool ballOnFieldCheck = false;
-
-    public GameObject thisCanva;
+    [SerializeField] private GameObject ballPrefab;
+    [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private GameObject thisCanva;
     
-    // Start is called before the first frame update
-    void Start()
+    private bool ballOnField = false;
+    
+    private void Start()
     {
         transform.localScale = originScale;
-        positionSpawn = spawnPoint.transform.position;
     }
     
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetAxis("DPadVertical") < 0)
         {
@@ -42,16 +30,14 @@ public class BallLauncherMenu : MonoBehaviour
             transform.localScale = Vector3.Lerp(transform.localScale, originScale, speed * Time.deltaTime);
         }
 
-        if (transform.localScale.x > minimumScale.x && ballOnFieldCheck == false)
+        if (transform.localScale.x > minimumScale.x && ballOnField == false)
         {
-            ballOnFieldCheck = true;
-            Instantiate(ballPrefab, positionSpawn, Quaternion.identity);
-        }
-
-        if (!Input.GetKey(key) && ballOnFieldCheck == true)
-        {
+            ballOnField = true;
+            
+            Instantiate(ballPrefab, spawnPoint.transform.position, Quaternion.identity);
+            
             transform.localScale = originScale;
-            ballOnFieldCheck = false;
+            ballOnField = false;
             thisCanva.SetActive(false);
         }
     }

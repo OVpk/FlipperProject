@@ -73,7 +73,7 @@ public class TutorialTVmanager : MonoBehaviour
         }
     };
 
-    private bool tutorialIsHere = false;
+    public bool tutorialIsHere = false;
 
     // Update is called once per frame
     void Update()
@@ -99,7 +99,6 @@ public class TutorialTVmanager : MonoBehaviour
 
     public void InitTV()
     {
-        tutorialIsHere = true;
         
         tutorialUIcanva.SetActive(true);
         allTVanim.Play("TVtutorialCome");

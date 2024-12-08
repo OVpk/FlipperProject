@@ -12,11 +12,12 @@ public class BallLauncherMenu : MonoBehaviour
     [SerializeField] private GameObject spawnPoint;
     [SerializeField] private GameObject thisCanva;
     
-    private bool ballOnField = false;
+    public static bool ballOnField;
     
     private void Start()
     {
         transform.localScale = originScale;
+        ballOnField = false;
     }
     
     private void Update()
@@ -37,7 +38,6 @@ public class BallLauncherMenu : MonoBehaviour
             Instantiate(ballPrefab, spawnPoint.transform.position, Quaternion.identity);
             
             transform.localScale = originScale;
-            ballOnField = false;
             thisCanva.SetActive(false);
         }
     }

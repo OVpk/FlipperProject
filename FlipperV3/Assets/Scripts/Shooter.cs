@@ -8,11 +8,12 @@ public class Shooter : MonoBehaviour
     public float loadingSpeed = 1;
     public Rigidbody rb;
 
+    public 
     void Update()
     {
         bool isDPadPressed = Mathf.Approximately(Input.GetAxis("DPadVertical"), -1f);
 
-        if (isDPadPressed)
+        if (isDPadPressed && BallLauncherMenu.ballOnField == false)
         {
             rb.isKinematic = false;
 

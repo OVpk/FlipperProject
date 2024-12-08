@@ -5,7 +5,7 @@ public class Paddle : MonoBehaviour
     public float targetPosition = 75;
     public float originPosition = 0;
 
-    private float paddleUpDuration = 0.15f; // Durée pendant laquelle le paddle reste levé.
+    private float paddleUpDuration = 0.1f; // Durée pendant laquelle le paddle reste levé.
 
     public HingeJoint hingeJoint;
     private JointSpring jointSpring;

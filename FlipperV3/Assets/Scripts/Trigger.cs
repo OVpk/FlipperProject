@@ -11,7 +11,12 @@ public class Trigger : MonoBehaviour
     public Dictionary<string, bool> dictInstrumentState = new Dictionary<string, bool>
     {
         {"Drum", false},
-        {"Cymbal", false}
+        {"Cymbal", false},
+        {"Piano1", false},
+        {"Piano2", false},
+        {"Piano3", false},
+        {"Piano4", false},
+        {"Bell", false}
     };
 
     public OutlinerIndication outlinerIndication;
@@ -24,6 +29,11 @@ public class Trigger : MonoBehaviour
         {
             case "Drum" : outlinerIndication.StartScintillement(outlinerIndication.drumOutliners); break;
             case "Cymbal" : outlinerIndication.StartScintillement(outlinerIndication.cymbalOutliners); break;
+            case "Piano1" : outlinerIndication.StartScintillement(outlinerIndication.piano1Outliners); break;
+            case "Piano2" : outlinerIndication.StartScintillement(outlinerIndication.piano2Outliners); break;
+            case "Piano3" : outlinerIndication.StartScintillement(outlinerIndication.piano3Outliners); break;
+            case "Piano4" : outlinerIndication.StartScintillement(outlinerIndication.piano4Outliners); break;
+            case "Bell" : outlinerIndication.StartScintillement(outlinerIndication.bellOutliners); break;
         }
     }
 
@@ -38,6 +48,11 @@ public class Trigger : MonoBehaviour
         {
             case "Drum" : outlinerIndication.StopScintillement(outlinerIndication.drumOutliners); break;
             case "Cymbal" : outlinerIndication.StopScintillement(outlinerIndication.cymbalOutliners); break;
+            case "Piano1" : outlinerIndication.StopScintillement(outlinerIndication.piano1Outliners); break;
+            case "Piano2" : outlinerIndication.StopScintillement(outlinerIndication.piano2Outliners); break;
+            case "Piano3" : outlinerIndication.StopScintillement(outlinerIndication.piano3Outliners); break;
+            case "Piano4" : outlinerIndication.StopScintillement(outlinerIndication.piano4Outliners); break;
+            case "Bell" : outlinerIndication.StopScintillement(outlinerIndication.bellOutliners); break;
         }
 
         if (byPlayer)
@@ -75,7 +90,12 @@ public class Trigger : MonoBehaviour
     public enum InstrumentType
     {
         Drum,
-        Cymbal
+        Cymbal,
+        Piano1,
+        Piano2,
+        Piano3,
+        Piano4,
+        Bell
     }
     
     public InstrumentType[] listeInstrument;
@@ -92,6 +112,16 @@ public class Trigger : MonoBehaviour
                     currentInstrument = "Drum"; break;
                 case InstrumentType.Cymbal :
                     currentInstrument = "Cymbal"; break;
+                case InstrumentType.Piano1 :
+                    currentInstrument = "Piano1"; break;
+                case InstrumentType.Piano2 :
+                    currentInstrument = "Piano2"; break;
+                case InstrumentType.Piano3 :
+                    currentInstrument = "Piano3"; break;
+                case InstrumentType.Piano4 :
+                    currentInstrument = "Piano4"; break;
+                case InstrumentType.Bell :
+                    currentInstrument = "Bell"; break;
             }
             StartInstrument();
             yield return new WaitForSeconds(timeToAct);

@@ -11,6 +11,16 @@ public class OutlinerIndication : MonoBehaviour
 
     public Material[] cymbalOutliners;
 
+    public Material[] piano1Outliners;
+    
+    public Material[] piano2Outliners;
+    
+    public Material[] piano3Outliners;
+    
+    public Material[] piano4Outliners;
+    
+    public Material[] bellOutliners;
+
     private Coroutine currentCoroutine;
     
     // Start is called before the first frame update
@@ -18,6 +28,11 @@ public class OutlinerIndication : MonoBehaviour
     {
         StopScintillement(drumOutliners);
         StopScintillement(cymbalOutliners);
+        StopScintillement(piano1Outliners);
+        StopScintillement(piano2Outliners);
+        StopScintillement(piano3Outliners);
+        StopScintillement(piano4Outliners);
+        StopScintillement(bellOutliners);
     }
     
     public float delayTime = 0.5f;

@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Drum
   - Cymbal
+  - Piano1
+  - Piano2
+  - Piano3
+  - Piano4
+  - Bell
   layers:
   - Default
   - TransparentFX

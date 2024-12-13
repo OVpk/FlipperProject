@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = System.Random;
 
 public class Trigger : MonoBehaviour
 {
@@ -76,7 +77,9 @@ public class Trigger : MonoBehaviour
     public bool listeEmpty = false;
 
     public string currentInstrument;
-    
+
+
+
     void Update()
     {
         if (!hasStarted && Input.anyKeyDown)
@@ -97,7 +100,7 @@ public class Trigger : MonoBehaviour
         Piano4,
         Bell
     }
-    
+
     public InstrumentType[] listeInstrument;
 
     public bool valideAction = false;
@@ -139,6 +142,6 @@ public class Trigger : MonoBehaviour
 
         listeEmpty = true;
     }
-
+    
     
 }

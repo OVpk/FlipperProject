@@ -744,6 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d4400bfafe18c4e8f4f797118d8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialTVmanager: {fileID: 0}
 --- !u!1 &2700164026198066817
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +803,7 @@ MonoBehaviour:
   normalGameSystem: {fileID: 0}
   trigger: {fileID: 0}
   currentStep: 0
+  tutorialIsHere: 0
 --- !u!1 &3176704083468470916
 GameObject:
   m_ObjectHideFlags: 0

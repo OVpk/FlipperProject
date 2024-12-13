@@ -19,7 +19,6 @@ public class OutlinerIndication : MonoBehaviour
     
     public Material[] piano4Outliners;
     
-    public Material[] bellOutliners;
 
     private Coroutine currentCoroutine;
     
@@ -32,7 +31,6 @@ public class OutlinerIndication : MonoBehaviour
         StopScintillement(piano2Outliners);
         StopScintillement(piano3Outliners);
         StopScintillement(piano4Outliners);
-        StopScintillement(bellOutliners);
     }
     
     public float delayTime = 0.5f;

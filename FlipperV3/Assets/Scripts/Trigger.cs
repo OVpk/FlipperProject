@@ -16,8 +16,7 @@ public class Trigger : MonoBehaviour
         {"Piano1", false},
         {"Piano2", false},
         {"Piano3", false},
-        {"Piano4", false},
-        {"Bell", false}
+        {"Piano4", false}
     };
 
     public OutlinerIndication outlinerIndication;
@@ -34,7 +33,6 @@ public class Trigger : MonoBehaviour
             case "Piano2" : outlinerIndication.StartScintillement(outlinerIndication.piano2Outliners); break;
             case "Piano3" : outlinerIndication.StartScintillement(outlinerIndication.piano3Outliners); break;
             case "Piano4" : outlinerIndication.StartScintillement(outlinerIndication.piano4Outliners); break;
-            case "Bell" : outlinerIndication.StartScintillement(outlinerIndication.bellOutliners); break;
         }
     }
 
@@ -53,7 +51,6 @@ public class Trigger : MonoBehaviour
             case "Piano2" : outlinerIndication.StopScintillement(outlinerIndication.piano2Outliners); break;
             case "Piano3" : outlinerIndication.StopScintillement(outlinerIndication.piano3Outliners); break;
             case "Piano4" : outlinerIndication.StopScintillement(outlinerIndication.piano4Outliners); break;
-            case "Bell" : outlinerIndication.StopScintillement(outlinerIndication.bellOutliners); break;
         }
 
         if (byPlayer)
@@ -97,13 +94,14 @@ public class Trigger : MonoBehaviour
         Piano1,
         Piano2,
         Piano3,
-        Piano4,
-        Bell
+        Piano4
     }
 
     public InstrumentType[] listeInstrument;
 
     public bool valideAction = false;
+
+    public EndGameScript endGameScript;
     
     IEnumerator LogoSpawn()
     {
@@ -123,8 +121,6 @@ public class Trigger : MonoBehaviour
                     currentInstrument = "Piano3"; break;
                 case InstrumentType.Piano4 :
                     currentInstrument = "Piano4"; break;
-                case InstrumentType.Bell :
-                    currentInstrument = "Bell"; break;
             }
             StartInstrument();
             yield return new WaitForSeconds(timeToAct);
@@ -141,6 +137,7 @@ public class Trigger : MonoBehaviour
         }
 
         listeEmpty = true;
+        endGameScript.EndGame();
     }
     
     

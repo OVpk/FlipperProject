@@ -55,10 +55,9 @@ public class InstrumentListGenerator : MonoBehaviour
                 else if (precedent == Trigger.InstrumentType.Piano1 ||
                          precedent == Trigger.InstrumentType.Piano2 ||
                          precedent == Trigger.InstrumentType.Piano3 ||
-                         precedent == Trigger.InstrumentType.Piano4 ||
-                         precedent == Trigger.InstrumentType.Bell)
+                         precedent == Trigger.InstrumentType.Piano4)
                 {
-                    // Si le précédent est un Piano ou Bell, le suivant est toujours Drum
+                    // Si le précédent est un Piano, le suivant est toujours Drum
                     instrumentChoice = Trigger.InstrumentType.Drum;
                 }
                 else

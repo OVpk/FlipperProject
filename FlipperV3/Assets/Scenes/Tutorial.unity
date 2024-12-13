@@ -13094,6 +13094,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 777188878754850695, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 23059ba2798fb394abf1256d6b920b60,
+        type: 3}
+    - target: {fileID: 777188878754850695, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
+        type: 3}
+      propertyPath: m_AudioOutputMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1326252662381637858, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: tack

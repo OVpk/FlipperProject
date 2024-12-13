@@ -60,8 +60,8 @@ public class TutorialTVmanager : MonoBehaviour
         { TutorialState.Step3, new Dictionary<string, string>
             {
                 { "anim", "DetectionBoxGIFanimation" },
-                { "text", "Frappez l'instrument correspondant tant qu'il est dans la zone de détection, sinon vous perdez de la vie" },
-                {"objectiveText", "Frappez le        pour continuer\n(Seulement quand il est dans la zone de détection)"}
+                { "text", "Frappez les instruments quand ils scintillent pour gagner des points " },
+                {"objectiveText", "Frappez les instruments pour gagner des points"}
             }
         },
         { TutorialState.FinalStep, new Dictionary<string, string>
@@ -126,7 +126,7 @@ public class TutorialTVmanager : MonoBehaviour
         {
             case TutorialState.Step1 : objectiveImage.sprite = drumLogo; break;
             case TutorialState.Step2 : objectiveImage.sprite = cymbalLogo; break;
-            case TutorialState.Step3 : objectiveImage.sprite = drumLogo; break;
+            case TutorialState.Step3 : objectiveImage.transform.parent.gameObject.SetActive(false); break;
         }
         
     }

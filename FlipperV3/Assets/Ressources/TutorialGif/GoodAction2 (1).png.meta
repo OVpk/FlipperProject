@@ -1,0 +1,1192 @@
+fileFormatVersion: 2
+guid: 6c3067d587eb10846a19f81fa5fbd3a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoodAction2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a9b1f7cf006da4294889c145ac3e18
+      internalID: -1731808586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5519e752c39ddf747b49a6416a4688b8
+      internalID: 1330267264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7c0b5af15045a4a8868dad670f8caa
+      internalID: -445521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74dc5ecbc0ff7148b62b43ea9abdc00
+      internalID: -1799977350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883a21c714f51274ea38f92004694b94
+      internalID: -1592730945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0d77bf3914889459ca71c5a6597205
+      internalID: 282627042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 630
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba13b33dbbff9c8408eb961335ef079e
+      internalID: -2121214873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ca9fe9351bc544b82865170a132b09
+      internalID: 1121730206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59c2fc507a0eb44d8a99f1ec3e7134c
+      internalID: -944847490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26a0b9812c26f4439928f6ed70c3340
+      internalID: -520010977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e397a88429721943bc04dc4514bef7a
+      internalID: 1174761051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d02b90c4435b64781c7a74693c979f
+      internalID: 1274075067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39a2bd2f3fff114a9b8872a0c934918
+      internalID: 176580878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 525
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a58ba12af7218c4bb8ee08c5b60a179
+      internalID: 1817878949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd6701f3acf02046a3ffa764e5a958d
+      internalID: -452488628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8466252248e50441a0e8572ba92353a
+      internalID: -1694987773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb1271a0884b5d49b308a1b9a473283
+      internalID: -663124535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0117bc541250db43a9495d399acbdb2
+      internalID: 860856171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15955c0a9302e3468e899ffe01f2aea
+      internalID: -1790220715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a55f27eedaaf424d8cb9e01acd00344
+      internalID: 1543334949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 420
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2159f577ae8be14a87a46e3e9439dd4
+      internalID: 1836322034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b9f00401ff17a40befd0115e171fb0
+      internalID: -571110867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96be7d02bbd49343b549f7ff84c2aea
+      internalID: 368665086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_23
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792277d0afa273e41a8508d74b943ef5
+      internalID: 1805554744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_24
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80864bcf19da8745a840d8ac2b70039
+      internalID: -2123247651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_25
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507a4b55a4de62f4f89c19e3b470c76e
+      internalID: -2104586165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e717baf894e386447942c5d6cef10e6e
+      internalID: 1797155336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 315
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36140cf9c3cd5b4e93a9c451a2ae726
+      internalID: 1259370881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebabe41804676b43862f8a7cd660717
+      internalID: 954035431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e413c29fa63933e4ea83e8698c4faee6
+      internalID: -1123052142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09fe8bb16df21f4f8c6782be80ec031
+      internalID: -406956213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948d9fa71dcf1ba4da6368e74efa1a39
+      internalID: -2119343231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c13aa770d99d254ca2335e67710b552
+      internalID: 2092095344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_33
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9775052568b094e86f347dabbce41b
+      internalID: -483543030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_34
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 210
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e48386f9428b2044bcce7825f3b511d
+      internalID: 1860941016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aee8fec9d8e1df4f909afeff0f85c73
+      internalID: -1570743862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c700fe663a7f19b419eb64da7e48272e
+      internalID: -1140821907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c682184ea182b354eaf27f7c6cfbfafd
+      internalID: 65346374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_38
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f9a353dbf23554a929fcb25d14ae1d
+      internalID: -37216494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_39
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3392265854dda6442a6a3efa93d885bd
+      internalID: -465853999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_40
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621f9da6f7d2edb4882133c592dea36e
+      internalID: 752226040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_41
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 105
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66795fa1840995a4f946a7a72801668e
+      internalID: 782089727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac29c5f47111441bbaab5ee98fb17a
+      internalID: 1242341426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_43
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c373a66bf786f3f46b69af58579c0062
+      internalID: 120207768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_44
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9677979798eed47b8d1137b380c2bb
+      internalID: 813717091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_45
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97704ebbab479674f881de9ee3c93efa
+      internalID: -1292736558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_46
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c67599b5fa8b5d41a0c8f91c1412f59
+      internalID: 1813688049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7494ca4232dd04f4289257a42cfd84f9
+      internalID: 696533840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodAction2 (1)_48
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 205
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddf7129fa8cc4043bbc9e2e9207666b
+      internalID: 100892762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GoodAction2 (1)_0: -1731808586
+      GoodAction2 (1)_1: 1330267264
+      GoodAction2 (1)_10: 1174761051
+      GoodAction2 (1)_11: 1274075067
+      GoodAction2 (1)_12: 176580878
+      GoodAction2 (1)_13: 1817878949
+      GoodAction2 (1)_14: -452488628
+      GoodAction2 (1)_15: -1694987773
+      GoodAction2 (1)_16: -663124535
+      GoodAction2 (1)_17: 860856171
+      GoodAction2 (1)_18: -1790220715
+      GoodAction2 (1)_19: 1543334949
+      GoodAction2 (1)_2: -445521
+      GoodAction2 (1)_20: 1836322034
+      GoodAction2 (1)_21: -571110867
+      GoodAction2 (1)_22: 368665086
+      GoodAction2 (1)_23: 1805554744
+      GoodAction2 (1)_24: -2123247651
+      GoodAction2 (1)_25: -2104586165
+      GoodAction2 (1)_26: 1797155336
+      GoodAction2 (1)_27: 1259370881
+      GoodAction2 (1)_28: 954035431
+      GoodAction2 (1)_29: -1123052142
+      GoodAction2 (1)_3: -1799977350
+      GoodAction2 (1)_30: -406956213
+      GoodAction2 (1)_31: -2119343231
+      GoodAction2 (1)_32: 2092095344
+      GoodAction2 (1)_33: -483543030
+      GoodAction2 (1)_34: 1860941016
+      GoodAction2 (1)_35: -1570743862
+      GoodAction2 (1)_36: -1140821907
+      GoodAction2 (1)_37: 65346374
+      GoodAction2 (1)_38: -37216494
+      GoodAction2 (1)_39: -465853999
+      GoodAction2 (1)_4: -1592730945
+      GoodAction2 (1)_40: 752226040
+      GoodAction2 (1)_41: 782089727
+      GoodAction2 (1)_42: 1242341426
+      GoodAction2 (1)_43: 120207768
+      GoodAction2 (1)_44: 813717091
+      GoodAction2 (1)_45: -1292736558
+      GoodAction2 (1)_46: 1813688049
+      GoodAction2 (1)_47: 696533840
+      GoodAction2 (1)_48: 100892762
+      GoodAction2 (1)_5: 282627042
+      GoodAction2 (1)_6: -2121214873
+      GoodAction2 (1)_7: 1121730206
+      GoodAction2 (1)_8: -944847490
+      GoodAction2 (1)_9: -520010977
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

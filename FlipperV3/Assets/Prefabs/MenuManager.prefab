@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press option to close
+  m_text: Press to close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3b8f82cbd05dc0240a8ef2f900aeeaf0, type: 2}
   m_sharedMaterial: {fileID: 6937436264781113147, guid: 3b8f82cbd05dc0240a8ef2f900aeeaf0,

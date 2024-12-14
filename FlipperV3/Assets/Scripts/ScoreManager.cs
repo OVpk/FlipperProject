@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TMP_Text scoreText;
+    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private Animation phoneAnim;
 
-    public int score;
-
-    public Animation phoneAnim;
+    private int score;
+    
     public void AddScore(int addedNumber)
     {
         score += addedNumber;

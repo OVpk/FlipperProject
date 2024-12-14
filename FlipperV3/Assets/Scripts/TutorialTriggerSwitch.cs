@@ -1,22 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialTriggerSwitch : MonoBehaviour
 {
+    [SerializeField] private TutorialTvManager tutorialManager;
 
-    public TutorialTVmanager tutorialManager;
-
-    public bool alreadyActived = false;
-
-    public TutorialTVmanager.TutorialState triggerTutorialStateName;
+    public TutorialTvManager.TutorialState triggerTutorialStateName;
+    private bool alreadyActived = false;
 
     private void OnTriggerEnter(Collider other)
     {
         TutorialEvent();
     }
-
     private void OnCollisionEnter(Collision other)
     {
         TutorialEvent();

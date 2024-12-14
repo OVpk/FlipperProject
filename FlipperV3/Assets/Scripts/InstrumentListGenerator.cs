@@ -1,74 +1,62 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
 public class InstrumentListGenerator : MonoBehaviour
 {
-    
+    [SerializeField] public GameManagerScript gameManager;
     public int listLength;
-
-    public Trigger trigger;
 
     private void Awake()
     {
-        GenererInstruments();
+        GenerateInstruments();
     }
-    
-    public void GenererInstruments()
+
+    private void GenerateInstruments()
     {
-        trigger.listeInstrument = new Trigger.InstrumentType[listLength];
+        gameManager.listeInstrument = new GameManagerScript.InstrumentType[listLength];
         Random random = new Random();
 
-        for (int i = 0; i < trigger.listeInstrument.Length; i++)
+        for (int i = 0; i < gameManager.listeInstrument.Length; i++)
         {
-            Trigger.InstrumentType instrumentChoice = 0;
+            GameManagerScript.InstrumentType instrumentChoice = 0;
             if (i == 0)
             {
-                // Le premier instrument est généré aléatoirement
-                instrumentChoice = (Trigger.InstrumentType)random.Next(Enum.GetValues(typeof(Trigger.InstrumentType)).Length);
+                instrumentChoice = (GameManagerScript.InstrumentType)random.Next(Enum.GetValues(typeof(GameManagerScript.InstrumentType)).Length);
             }
+            
             else
             {
-                Trigger.InstrumentType precedent = trigger.listeInstrument[i - 1];
+                GameManagerScript.InstrumentType precedent = gameManager.listeInstrument[i - 1];
 
-                if (precedent == Trigger.InstrumentType.Drum)
+                if (precedent == GameManagerScript.InstrumentType.Drum)
                 {
                     
                     switch (random.Next(2))
                     {
-                        case 0 : instrumentChoice = Trigger.InstrumentType.Cymbal; break;
-                        case 1 : instrumentChoice = (Trigger.InstrumentType)random.Next(Enum.GetValues(typeof(Trigger.InstrumentType)).Length); break;
+                        case 0 : instrumentChoice = GameManagerScript.InstrumentType.Cymbal; break;
+                        case 1 : instrumentChoice = (GameManagerScript.InstrumentType)random.Next(Enum.GetValues(typeof(GameManagerScript.InstrumentType)).Length); break;
                     }
                     
                 }
-                else if (precedent == Trigger.InstrumentType.Cymbal)
+                else if (precedent == GameManagerScript.InstrumentType.Cymbal)
                 {
-                    // Si le précédent est Cymbal, l'instrument suivant est aléatoire sauf Cymbal
-                    instrumentChoice = (Trigger.InstrumentType)random.Next(Enum.GetValues(typeof(Trigger.InstrumentType)).Length);
-                    if (instrumentChoice == Trigger.InstrumentType.Cymbal)
+                    instrumentChoice = (GameManagerScript.InstrumentType)random.Next(Enum.GetValues(typeof(GameManagerScript.InstrumentType)).Length);
+                    if (instrumentChoice == GameManagerScript.InstrumentType.Cymbal)
                     {
                         instrumentChoice -= 1;
                     }
                 }
-                else if (precedent == Trigger.InstrumentType.Piano1 ||
-                         precedent == Trigger.InstrumentType.Piano2 ||
-                         precedent == Trigger.InstrumentType.Piano3 ||
-                         precedent == Trigger.InstrumentType.Piano4)
+                else if (precedent == GameManagerScript.InstrumentType.Piano1 ||
+                         precedent == GameManagerScript.InstrumentType.Piano2 ||
+                         precedent == GameManagerScript.InstrumentType.Piano3 ||
+                         precedent == GameManagerScript.InstrumentType.Piano4)
                 {
-                    // Si le précédent est un Piano, le suivant est toujours Drum
-                    instrumentChoice = Trigger.InstrumentType.Drum;
-                }
-                else
-                {
-                    // Autres cas, génère un instrument aléatoire
-                    instrumentChoice = (Trigger.InstrumentType)random.Next(Enum.GetValues(typeof(Trigger.InstrumentType)).Length);
+                    instrumentChoice = GameManagerScript.InstrumentType.Drum;
                 }
             }
-            trigger.listeInstrument[i] = instrumentChoice;
             
+            gameManager.listeInstrument[i] = instrumentChoice;
         }
     }
-    
 }

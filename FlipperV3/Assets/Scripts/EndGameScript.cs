@@ -1,22 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EndGameScript : MonoBehaviour
 {
-
-    public GameObject arrowUi;
-
-    public GameObject reloadButton;
-    public GameObject menuButton;
-
-    public GameObject cursor;
-
-    public Animation phoneAnim;
-
-    public GameObject musicScreen;
-
-    public GameObject blackScreen;
+    [SerializeField] private GameObject arrowUi;
+    [SerializeField] private GameObject reloadButton;
+    [SerializeField] private GameObject menuButton;
+    [SerializeField] private GameObject cursor;
+    [SerializeField] private Animation phoneAnim;
+    [SerializeField] private GameObject musicScreen;
+    [SerializeField] private GameObject blackScreen;
 
     public void EndGame()
     {

@@ -1,26 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayAnimUniversal : MonoBehaviour
 {
-
-    public Animation anim;
-
+    [SerializeField] private Animation anim;
     public string animName;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayThisAnim()
     {
         anim.Play(animName);

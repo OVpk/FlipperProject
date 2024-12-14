@@ -159,9 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d3d43e64376624dadea5d1b517f5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseGIFanimator: {fileID: 3444551487333811184}
+  pauseGIFanimator: {fileID: 3444551487333811184}
   menu: {fileID: 1775183035245281165}
-  menuOpen: 0
 --- !u!1 &998879035034570906
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,8 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13eda643ca897ef49a02bd2dff317527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoveredScale: 1.2
-  transitionSpeed: 10
   sfxButton: {fileID: 0}
 --- !u!1 &1007628124737993249
 GameObject:
@@ -1482,9 +1479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0acc1d87c1725443be4bd65faa422d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 250
   cursor: {fileID: 561189371880392126}
   canvas: {fileID: 6998210636103818607}
+  moveSpeed: 250
 --- !u!1 &5930774082901053319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,7 +1589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2438640749724896266}
   m_Layer: 5
-  m_Name: AllTVtutorial
+  m_Name: AllTV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

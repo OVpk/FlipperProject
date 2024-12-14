@@ -609,7 +609,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09409adecdbf1234e9abaf0260f56f35, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d52ce00d1bccd3748bc10f7bb2f16fb8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!82 &1817492051 stripped
 AudioSource:
@@ -1889,7 +1889,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialManager: {fileID: 2137964370110657379}
-  alreadyActived: 0
   triggerTutorialStateName: 0
 --- !u!65 &1922179359
 BoxCollider:
@@ -8053,6 +8052,11 @@ PrefabInstance:
       objectReference: {fileID: 946684196}
     - target: {fileID: 316850737853321403, guid: c24ef1466decddd42b29376b5c9a65b0,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 316850737853321403, guid: c24ef1466decddd42b29376b5c9a65b0,
+        type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 1988709835}
@@ -13245,7 +13249,7 @@ PrefabInstance:
     - target: {fileID: 4950584850255316748, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: m_Name
-      value: UIGameSystem
+      value: UIGameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6305958020261164044, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
@@ -13475,6 +13479,11 @@ PrefabInstance:
     - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
         type: 3}
       propertyPath: trigger
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
+        type: 3}
+      propertyPath: gameManager
       value: 
       objectReference: {fileID: 946684196}
     - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
@@ -13891,6 +13900,11 @@ PrefabInstance:
     - target: {fileID: 7026949771785619497, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
         type: 3}
       propertyPath: trigger
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 7026949771785619497, guid: c3745d3b87f99364fab1c7b9e35b4b4a,
+        type: 3}
+      propertyPath: gameManager
       value: 
       objectReference: {fileID: 946684196}
     - target: {fileID: 7026949771785619497, guid: c3745d3b87f99364fab1c7b9e35b4b4a,

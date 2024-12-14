@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class BallCameraFollow : MonoBehaviour
 {
-
     [SerializeField] private GameObject objectToFollow;
 
     private Vector3 distanceWithObjectToFollow;

@@ -10143,7 +10143,7 @@ GameObject:
   - component: {fileID: 593365423}
   - component: {fileID: 593365426}
   m_Layer: 0
-  m_Name: BallPool
+  m_Name: BellPool
   m_TagString: Bell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10157,7 +10157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593365421}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.83, y: -3.61, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10508,7 +10508,8 @@ Transform:
   - {fileID: 1523447746}
   - {fileID: 1593165132}
   - {fileID: 963292780}
-  m_Father: {fileID: 0}
+  - {fileID: 1612302694}
+  m_Father: {fileID: 1329339878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &593365423
 MonoBehaviour:
@@ -10522,11 +10523,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1115febfb2406eb4ab40221a95f10aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: {x: 0, y: 1, z: 0}
-  strength: 3500
   animation: {fileID: 593365425}
   spawnPoint: {fileID: 1612302693}
   audioSource: {fileID: 1600002644}
+  angle: {x: 0, y: 1, z: 0}
+  strength: 3500
 --- !u!65 &593365424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10717,6 +10718,7 @@ Transform:
   m_Children:
   - {fileID: 5867878933367426678}
   - {fileID: 320289928}
+  - {fileID: 1184335731}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &619891399 stripped
@@ -12217,9 +12219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0acc1d87c1725443be4bd65faa422d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 250
   cursor: {fileID: 706887979}
   canvas: {fileID: 564893646}
+  moveSpeed: 250
 --- !u!114 &706887981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20534,7 +20536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184335730}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.24, y: 8.97, z: -0.044401865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20543,7 +20545,7 @@ Transform:
   - {fileID: 174228495}
   - {fileID: 662766841}
   - {fileID: 104178082}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 616237322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1186432624 stripped
 Transform:
@@ -22505,8 +22507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13eda643ca897ef49a02bd2dff317527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoveredScale: 1.2
-  transitionSpeed: 10
   sfxButton: {fileID: 1288929696}
 --- !u!222 &1288929695
 CanvasRenderer:
@@ -23087,6 +23087,7 @@ Transform:
   - {fileID: 1677886322}
   - {fileID: 5798054538466250402}
   - {fileID: 872268690}
+  - {fileID: 593365422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1329352840 stripped
@@ -27607,12 +27608,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612302693}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.858, y: -1.089, z: -0.256}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9720001, y: 2.521, z: -0.19600001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 593365422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1617569900 stripped
 Transform:
@@ -29776,7 +29777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1001 &1750805313
 PrefabInstance:
@@ -42561,6 +42562,11 @@ PrefabInstance:
       objectReference: {fileID: 946684196}
     - target: {fileID: 316850737853321403, guid: c24ef1466decddd42b29376b5c9a65b0,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 316850737853321403, guid: c24ef1466decddd42b29376b5c9a65b0,
+        type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 1988709835}
@@ -43252,7 +43258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &4776480792302254245
 GameObject:
@@ -43334,7 +43340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &4794189515265885179
 GameObject:
@@ -43416,7 +43422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!33 &4794194766868282214
 MeshFilter:
@@ -48310,7 +48316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &5165635118671852170
 GameObject:
@@ -48596,7 +48602,7 @@ PrefabInstance:
     - target: {fileID: 4950584850255316748, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
       propertyPath: m_Name
-      value: UIGameSystem
+      value: UIGameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6305958020261164044, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
         type: 3}
@@ -48659,8 +48665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf855517d5d191945b7e542fac0b89d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 946684196}
   listLength: 25
-  trigger: {fileID: 946684196}
 --- !u!224 &5349630736426800871 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9192721926044164451, guid: edf286fa9f39b504e8c0ff5b34b5d32f,
@@ -48915,7 +48921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &5723790826201411863
 Transform:
@@ -49173,7 +49179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &6142319362034904364
 GameObject:
@@ -49318,7 +49324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!33 &6497043942729445804
 MeshFilter:
@@ -49408,7 +49414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &6572845683580293205
 Transform:
@@ -49500,6 +49506,11 @@ PrefabInstance:
     - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
         type: 3}
       propertyPath: trigger
+      value: 
+      objectReference: {fileID: 946684196}
+    - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
+        type: 3}
+      propertyPath: gameManager
       value: 
       objectReference: {fileID: 946684196}
     - target: {fileID: 8582418075646175142, guid: e0ce850eea4c1054999eb92bf32b0e03,
@@ -49691,7 +49702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &7052171384822513262
 GameObject:
@@ -50214,7 +50225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!23 &7714553092894545208
 MeshRenderer:
@@ -50392,7 +50403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &7859103613830585790
 Transform:
@@ -50807,7 +50818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &8164078559892415987
 GameObject:
@@ -50936,7 +50947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!23 &8335561049140584434
 MeshRenderer:
@@ -51038,7 +51049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &8364700849759085589
 Transform:
@@ -51172,7 +51183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1001 &8421992687331847832
 PrefabInstance:
@@ -51325,7 +51336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &8577277752313280380
 Transform:
@@ -51445,7 +51456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &8722855701945656565
 GameObject:
@@ -51536,7 +51547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &8806274043428425495
 Transform:
@@ -51611,7 +51622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &8822929645209806353
 GameObject:
@@ -51714,7 +51725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1 &8954084078245522886
 GameObject:
@@ -51848,7 +51859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!33 &9138134772491976580
 MeshFilter:
@@ -51916,7 +51927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &9180411340639889549
 Transform:
@@ -51991,7 +52002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!4 &9183282347162315797
 Transform:
@@ -52085,7 +52096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d7a50049e39004bbd7d087a8862e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 946684196}
+  gameManager: {fileID: 946684196}
   scoreManager: {fileID: 1988709835}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -52109,6 +52120,3 @@ SceneRoots:
   - {fileID: 1907376746638890039}
   - {fileID: 2388279332332300429}
   - {fileID: 37461258}
-  - {fileID: 1184335731}
-  - {fileID: 593365422}
-  - {fileID: 1612302694}

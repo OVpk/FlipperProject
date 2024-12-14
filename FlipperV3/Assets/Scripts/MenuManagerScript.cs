@@ -1,16 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManagerScript : MonoBehaviour
 {
+    [SerializeField] private Animator pauseGIFanimator;
+    [SerializeField] private GameObject menu;
     
-    public Animator PauseGIFanimator;
-    
-    public GameObject menu;
-    public bool menuOpen;
+    private bool menuOpen;
 
     private void Update()
     {
@@ -20,13 +16,13 @@ public class MenuManagerScript : MonoBehaviour
         }
     }
 
-    public void OpenCloseMenu()
+    private void OpenCloseMenu()
     {
         menuOpen = !menuOpen;
         menu.SetActive(menuOpen);
         if (menuOpen)
         {
-            PauseGIFanimator.Play("PauseGIFanimation");
+            pauseGIFanimator.Play("PauseGIFanimation");
             Time.timeScale = 0;
         }
         else

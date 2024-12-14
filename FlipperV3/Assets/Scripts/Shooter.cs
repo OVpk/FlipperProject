@@ -1,22 +1,19 @@
-using System;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
     public float decal;
     public float accel;
-    public float loadingSpeed = 1;
-    public Rigidbody rb;
+    public float loadingSpeed;
+    [SerializeField] private Rigidbody rb;
 
-    public 
-    void Update()
+    private void Update()
     {
         bool isDPadPressed = Mathf.Approximately(Input.GetAxis("DPadVertical"), -1f);
 
-        if (isDPadPressed && BallLauncherMenu.ballOnField == false)
+        if (isDPadPressed && BallLauncherUi.ballOnField == false)
         {
             rb.isKinematic = false;
-
             if (transform.localPosition.y > decal)
             {
                 if (!rb.isKinematic)
@@ -43,7 +40,6 @@ public class Shooter : MonoBehaviour
                 transform.localPosition = Vector3.zero;
             }
         }
-
         transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
     }
     

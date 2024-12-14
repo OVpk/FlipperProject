@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class JoystickCursor : MonoBehaviour
 {
-    public float moveSpeed;
-    public RectTransform cursor;
-    public RectTransform canvas;
+    [SerializeField] private RectTransform cursor;
+    [SerializeField] private RectTransform canvas;
 
     private Vector2 cursorPosition;
+    public float moveSpeed;
 
     void Update()
     {

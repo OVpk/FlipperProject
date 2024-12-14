@@ -8,17 +8,21 @@ public class CursorTrigger : MonoBehaviour
     private Vector3 originalScale;
     private Button lastHoveredButton;
 
+    public AudioSource sfxButton;
     private void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero);
 
         if (hit && hit.collider.gameObject.GetComponent<Button>())
         {
+            
+            
             Button button = hit.collider.gameObject.GetComponent<Button>();
 
             // Si un nouveau bouton est détecté
             if (lastHoveredButton != button)
             {
+                sfxButton.Play();
                 if (lastHoveredButton != null)
                 {
                     lastHoveredButton.transform.localScale = originalScale;

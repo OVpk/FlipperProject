@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class Trigger : MonoBehaviour
@@ -82,6 +84,7 @@ public class Trigger : MonoBehaviour
         if (!hasStarted && Input.anyKeyDown)
         {
             hasStarted = true;
+            globalMusic.Play();
             StartCoroutine(LogoSpawn());
         }
         
@@ -102,11 +105,22 @@ public class Trigger : MonoBehaviour
     public bool valideAction = false;
 
     public EndGameScript endGameScript;
-    
+
+    public TMP_Text globalTimer;
+
+    public AudioSource globalMusic;
+
+
+    private void Start()
+    {
+        globalTimer.text = listeInstrument.Length.ToString();
+    }
+
     IEnumerator LogoSpawn()
     {
         for (int i = 0; i < listeInstrument.Length; i++)
         {
+            
             switch (listeInstrument[i])
             {
                 case InstrumentType.Drum :
@@ -132,12 +146,16 @@ public class Trigger : MonoBehaviour
             {
                 EndInstrument(false);
             }
+            globalTimer.text = (listeInstrument.Length - (i+1) ).ToString();
             yield return new WaitForSeconds(delayBetweenActions);
-            
         }
 
         listeEmpty = true;
-        endGameScript.EndGame();
+
+        if (SceneManager.GetActiveScene().name != "Tutorial")
+        {
+            endGameScript.EndGame();
+        }
     }
     
     

@@ -48,9 +48,5 @@ public class MenuManagerScript : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
         Time.timeScale = 1;
     }
-
-    public void Quit()
-    {
-        Application.Quit();
-    }
+    
 }
